@@ -7,7 +7,6 @@ import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
-import vercel from "@astrojs/vercel/static";
 import icon from "astro-icon";
 import opengraphImages, { presets } from "astro-opengraph-images";
 
@@ -75,11 +74,4 @@ export default defineConfig({
     }),
   ],
   output: "static",
-  adapter: vercel({
-    webAnalytics: {
-      enabled: true,
-    },
-    imageService: true,
-    devImageService: "sharp",
-  }),
 });
