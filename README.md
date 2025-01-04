@@ -1,6 +1,6 @@
 # Astrofilio
 
-A clean, fast, and lightweight portfolio template built with [Astro](https://astro.build/), [Vercel](https://vercel.com/), and [Tailwind CSS](https://tailwindcss.com/) for optimal performance.
+A clean, fast, and lightweight portfolio template built with [Astro](https://astro.build/), [Cloudflare](https://pages.cloudflare.com/), and [Tailwind CSS](https://tailwindcss.com/) for optimal performance.
 
 Deploy your Astrofilio site with Vercel in minutes.
 
@@ -13,7 +13,7 @@ Deploy your Astrofilio site with Vercel in minutes.
 - Styling: [Tailwind CSS](https://tailwindcss.com/)
 - Analytics: [Vercel Web Analytics](https://vercel.com/docs/speed-insights)
 - Astro View Transitions [https://docs.astro.build/en/guides/view-transitions/]
-- Deployment: [Vercel](https://vercel.com/)
+- Deployment: [Cloudflare](https://pages.cloudflare.com/)
 
 ## Features
 
