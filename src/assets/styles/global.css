@@ -1,3 +1,13 @@
+@import "tailwindcss";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+@plugin "@tailwindcss/typography";
+
+@theme {
+  /* Font families */
+  --font-sans: "Geist Sans", system-ui, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, monospace;
+}
+
 ::selection {
   background-color: #47a3f3;
   color: #fefefe;
@@ -74,7 +84,7 @@ h3,
 h4,
 h5,
 h6 {
-  @apply font-medium tracking-tight !important;
+  @apply font-medium! tracking-tight!;
 }
 
 .prose strong {
@@ -120,11 +130,19 @@ table {
   margin: 0 !important;
 }
 
+blockquote p:first-of-type::before {
+  content: none;
+}
+
+blockquote p:first-of-type::after {
+  content: none;
+}
+
 .title {
   text-wrap: balance;
 }
 
-[data-theme="dark"] .astro-code ,
+[data-theme="dark"] .astro-code,
 [data-theme="dark"] .astro-code span {
   color: var(--shiki-dark) !important;
   background-color: var(--shiki-dark-bg) !important;

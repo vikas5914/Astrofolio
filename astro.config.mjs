@@ -1,7 +1,7 @@
 import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
-import tailwind from "@astrojs/tailwind";
+import tailwindcss from "@tailwindcss/vite";
 import react from "@astrojs/react";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
@@ -13,6 +13,9 @@ import opengraphImages, { presets } from "astro-opengraph-images";
 // https://astro.build/config
 export default defineConfig({
   site: "https://astrofolio.pages.dev",
+  vite: {
+    plugins: [tailwindcss()],
+  },
   integrations: [
     mdx({
       image: {
@@ -43,7 +46,6 @@ export default defineConfig({
       gfm: true,
     }),
     sitemap(),
-    tailwind(),
     react({
       experimentalReactChildren: true,
     }),
